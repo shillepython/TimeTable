@@ -1,2 +1,4 @@
 # TimeTable
-TimeTable for kit-it
+Collaborators: Serafim Semikaht, Nick Cherednick.
+
+TimeTable for kit-it.
