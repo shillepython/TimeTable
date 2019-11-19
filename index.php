@@ -16,11 +16,34 @@ $userObject = new UserObject();
 </head>
 <body>
 
-<nav>
-    <p>input</p>
+<nav class="cyan lighten-2">
+    <div class="container">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center"><img src="http://kitit.com.ua/wp-content/uploads/2018/12/cropped-logo_kit_w-1.png" width="65" height="65" alt=""></a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a href="http://kitit.com.ua/">kitit.com.ua</a></li>
+            </ul>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="/">Registation</a></li>
+                <li><a href="signin">Sign in</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="http://kitit.com.ua/">kitit.com.ua</a></li>
+                <li><a href="/">Registation</a></li>
+                <li><a href="signin">Sign in</a></li>
+            </ul>
+        </div>
+    </div>
 </nav>
+
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="public/js/materialize.min.js"></script>
+<script>
+    $( document ).ready(function(){
+        $(".button-collapse").sideNav();
+    })
+</script>
 </body>
 </html>
