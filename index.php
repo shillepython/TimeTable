@@ -63,52 +63,11 @@ $userObject = new UserObject();
 </div>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="public/js/materialize.min.js"></script>
+<script src="public/js/scroll.js"></script>
 <script>
     $( document ).ready(function(){
         $(".button-collapse").sideNav();
     })
-
-    var anchors = [];
-    var currentAnchor = -1;
-    var isAnimating  = false;
-
-    $(function(){
-
-        function updateAnchors() {
-            anchors = [];
-            $('.wrap').each(function(i, element){
-                anchors.push( $(element).offset().top );
-            });
-        }
-
-        $('body').on('mousewheel', function(e){
-            e.preventDefault();
-            e.stopPropagation();
-            if( isAnimating ) {
-                return false;
-            }
-            isAnimating  = true;
-            // Increase or reset current anchor
-            if( e.originalEvent.wheelDelta >= 0 ) {
-                currentAnchor--;
-            }else{
-                currentAnchor++;
-            }
-            if( currentAnchor > (anchors.length - 1)
-                || currentAnchor < 0 ) {
-                currentAnchor = 0;
-            }
-            isAnimating  = true;
-            $('html, body').animate({
-                scrollTop: parseInt( anchors[currentAnchor] )
-            }, 500, 'swing', function(){
-                isAnimating  = false;
-            });
-        });
-
-        updateAnchors();
-
-    });
 </script>
 </body>
 </html>
