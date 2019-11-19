@@ -17,7 +17,7 @@ $userObject = new UserObject();
 <body>
 
 <nav>
-    <p>Ты еблан?!</p>
+    <p>input</p>
 </nav>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
