@@ -19,7 +19,7 @@ $userObject = new UserObject();
 <body>
 <div class="wrap">
 <div class="wrapper">
-    <nav class="cyan lighten-2">
+    <nav class="light-blue darken-2">
         <div class="container">
             <div class="nav-wrapper">
                 <a href="#" class="brand-logo center"><img src="http://kitit.com.ua/wp-content/uploads/2018/12/cropped-logo_kit_w-1.png" width="65" height="65" alt=""></a>
@@ -58,8 +58,39 @@ $userObject = new UserObject();
     </div>
 </div>
 </div>
-<div class="wrap" style="height: 100vh;">
-
+<div class="wrap">
+    <div class="wrapper-two">
+        <div class="container">
+            <div class="registation">
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="first_name" type="text" class="validate">
+                                <label for="first_name">First Name</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="last_name" type="text" class="validate">
+                                <label for="last_name">Last Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="password" type="password" class="validate">
+                                <label for="password">Password</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="email" type="email" class="validate">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="public/js/materialize.min.js"></script>

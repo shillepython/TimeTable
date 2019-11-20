@@ -14,6 +14,15 @@ nav {
     background-size: cover;
     height: 100vh;
 }
+.wrapper-two {
+    color: #000;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../img/bg_reg.gif) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
 .wrap-center {
     width: 100%;
     height: 100%;
@@ -26,6 +35,18 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.registation {
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 .group-header h1 {
     font-weight: 500;
     display: block;
@@ -73,7 +94,7 @@ nav {
     width: 26px;
 }
 .mouse span {
-    animation-duration: 1s;
+    animation-duration: 1.5s;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
     animation-name: scroll;
