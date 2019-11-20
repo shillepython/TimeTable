@@ -56,7 +56,7 @@ nav {
     justify-content: center;
     margin-top: 20px;
 }
-.btn-header button {
+.btn-header a {
     font-weight: 500;
     font-size: 20px;
     padding: 5px 15px;
@@ -66,12 +66,24 @@ nav {
     transition: .5s ease;
     border-radius: 4px;
 }
-.btn-header button:hover {
+ a {
+    color: #fff;
+}
+.btn-header a:hover{
     background-color: #fff;
     color: #000;
     border: 1px solid #fff;
 }
-
+.btn-registation {
+    font-weight: 500;
+    font-size: 20px;
+    padding: 5px 15px;
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: transparent;
+    transition: .5s ease;
+    border-radius: 4px;
+}
 
 .cont{
     position: absolute;

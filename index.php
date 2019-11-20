@@ -19,7 +19,7 @@ $userObject = new UserObject();
 <body>
 <div class="wrap">
 <div class="wrapper">
-    <nav class="light-blue darken-2">
+    <nav style="background-color: rgba(2,136,209,0.44);">
         <div class="container">
             <div class="nav-wrapper">
                 <a href="#" class="brand-logo center"><img src="http://kitit.com.ua/wp-content/uploads/2018/12/cropped-logo_kit_w-1.png" width="65" height="65" alt=""></a>
@@ -46,7 +46,9 @@ $userObject = new UserObject();
                 <h1>KIT-IT</h1>
                 <span>Смотри расписание заняйти в любое удобное время</span>
                 <div class="btn-header">
-                    <button>Зарегистрироватся</button>
+                    <div id="id-reg">
+                        <a href="#registation">Зарегистрироваться</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -59,7 +61,7 @@ $userObject = new UserObject();
 </div>
 </div>
 <div class="wrap">
-    <div class="wrapper-two">
+    <div class="wrapper-two" id="registation">
         <div class="container">
             <div class="registation">
                 <div class="row">
@@ -86,6 +88,11 @@ $userObject = new UserObject();
                                 <label for="email">Email</label>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input type="submit" class="btn-registation" value="Зарегистрироваться">
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -99,6 +106,16 @@ $userObject = new UserObject();
     $( document ).ready(function(){
         $(".button-collapse").sideNav();
     })
+</script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#id-reg").on("click","a", function (event) {
+            event.preventDefault();
+            var id  = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 1000);
+        });
+    });
 </script>
 </body>
 </html>
